@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+body{
+    background: rgb(107, 178, 196);
+}
+
+button{
+    font-weight: 300;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    color: aliceblue;
+    border: 2px solid rgb(176, 224, 114);
+    
+    margin: 20px;
+    /* padding: 20px; */
+    background: rgb(48, 196, 134);
+    border-radius: 10px;
+}
+button:hover{
+    background: rgb(255, 0, 255);
+}
+.stopWatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.allbtn{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+p{
+    font-size: 100px;
+    color: blueviolet;
+    font-weight: 700;
+}
+h1{
+    color: azure;
+    font-size: 50px;
+    font-weight:500;
+}
