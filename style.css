@@ -183,7 +183,7 @@ h1 {
     top: 320px;
     width: 20px;
     height: 20px;
-    right: 580px;
+    right: 564px;
 }
 
 .two {
@@ -192,7 +192,7 @@ h1 {
     top: 380px;
     width: 20px;
     height: 20px;
-    right: 520px;
+    right: 505px;
 }
 
 .three {
@@ -201,7 +201,7 @@ h1 {
     top: 450px;
     width: 20px;
     height: 20px;
-    right: 500px;
+    right: 485px;
 }
 
 .four {
@@ -210,7 +210,7 @@ h1 {
     bottom: 110px;
     width: 20px;
     height: 20px;
-    right: 520px;
+    right: 502px;
 }
 
 .five {
@@ -219,7 +219,7 @@ h1 {
     bottom: 45px;
     width: 20px;
     height: 20px;
-    right: 580px;
+    right: 565px;
 }
 
 .six {
@@ -229,7 +229,7 @@ h1 {
     bottom: 20px;
     width: 20px;
     height: 20px;
-    right: 660px;
+    right: 645px;
 }
 
 .seven {
@@ -238,7 +238,7 @@ h1 {
     bottom: 50px;
     width: 20px;
     height: 20px;
-    left: 588px;
+    left: 590px;
 }
 
 .eight {
@@ -283,31 +283,16 @@ h1 {
     top: 300px;
     width: 20px;
     height: 20px;
-    right: 662px;
+    right: 650px;
+}
+.fotter{
+    font-size: 20px;
+    color: rgb(255, 251, 0);
+}
+
+.fotter:hover{
+    color: rgb(255, 251, 0);
+    transform:rotate(200deg);
 }
 
 
-
-/* .Hour-Stick {
-	width: 1.8%;
-	height: 25%;
-	top: 25%;
-	left: 48.85%;
-	opacity: 0.8;
-}
-
-.Minute-Stick {
-	width: 1.6%;
-	height: 30%;
-	top: 19%;
-	left: 48.9%;
-	opacity: 0.8;
-}
-
-.stick {
-	width: 1%;
-	height: 40%;
-	top: 9%;
-	left: 49.25%;
-	opacity: 0.8;
-} */
