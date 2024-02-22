@@ -162,14 +162,15 @@ start.addEventListener('click',()=>{
      second++
 FirstStick.style.transform = `rotate(${second*6}deg)`
 
-     if (second >= 1) {
+     if (second >= 60) {
        minute++
 MinuteStick.style.transform = `rotate(${minute*6}deg)`
 
        second = 0
      }
-     if (minute >= 2) {
+     if (minute >= 60) {
        hour++
+      //  transform-origin: 20% 40%;
 HourStick.style.transform = `rotate(${hour*30}deg)`
 
        minute = 0
