@@ -1,58 +1,292 @@
-*{
+* {
     margin: 0;
-    padding: 0;box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     background: rgb(107, 178, 196);
 }
 
-button{
+button {
     font-weight: 300;
     width: 100px;
     height: 30px;
     font-size: 16px;
     color: aliceblue;
     border: 2px solid rgb(176, 224, 114);
-    
+
     margin: 20px;
     /* padding: 20px; */
     background: rgb(48, 196, 134);
     border-radius: 10px;
 }
-button:hover{
+
+button:hover {
     background: rgb(255, 0, 255);
 }
-.stopWatch{
+
+.stopWatch {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
 }
-.allbtn{
-    margin-top: 250px;
+
+.allbtn {
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: row;
 }
-p{
+
+p {
     font-size: 100px;
     color: blueviolet;
     font-weight: 700;
 }
-h1{
+
+h1 {
     color: azure;
     font-size: 50px;
-    font-weight:500;
+    font-weight: 500;
 }
-.stick{
-    width: 10px;
-    height: 60px;
-    background: blue;
-    transform: rotate(27deg);
-}
-.main-stick{
+
+.circle {
+    background: rgb(216, 216, 149);
+    margin-left: 510px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    border: 3px solid rgb(59, 41, 41);
+
+    border-radius: 50%;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 34px 34px 68px #bebebe,
+        -34px -34px 68px #599ac0;
 }
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    /*to make the height and width responsive*/
+    width: 40vw;
+    background: url(clock.png) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+}
+
+.stick,
+.Minute-Stick,
+.Hour-Stick {
+    border-radius: 10px;
+    width: 1px;
+    height: 250px;
+    background: blue;
+    /* transform: rotate(27deg); */
+}
+
+.Minute-Stick {
+    width: 5px;
+    background: black;
+
+}
+
+.Hour-Stick {
+    width: 10px;
+    background: white;
+
+}
+
+.main-stick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.white {
+    background: white;
+    width: 100%;
+}
+
+.black {
+    background: black;
+    width: 100%;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+.name {
+    /* word-wrap: wrap; */
+    flex-wrap: nowrap;
+    position: absolute;
+    height: 200px;
+    width: 20px;
+    z-index: 0;
+    font-size: 10px;
+    right: 580px;
+    top: 400px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    background: rgb(231, 182, 20);
+    color: azure;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.one {
+    position: absolute;
+    font-size: 20px;
+    top: 320px;
+    width: 20px;
+    height: 20px;
+    right: 580px;
+}
+
+.two {
+    position: absolute;
+    font-size: 20px;
+    top: 380px;
+    width: 20px;
+    height: 20px;
+    right: 520px;
+}
+
+.three {
+    position: absolute;
+    font-size: 20px;
+    top: 450px;
+    width: 20px;
+    height: 20px;
+    right: 500px;
+}
+
+.four {
+    position: absolute;
+    font-size: 20px;
+    bottom: 110px;
+    width: 20px;
+    height: 20px;
+    right: 520px;
+}
+
+.five {
+    position: absolute;
+    font-size: 20px;
+    bottom: 45px;
+    width: 20px;
+    height: 20px;
+    right: 580px;
+}
+
+.six {
+    position: absolute;
+    font-size: 20px;
+    /* top: 300px; */
+    bottom: 20px;
+    width: 20px;
+    height: 20px;
+    right: 660px;
+}
+
+.seven {
+    position: absolute;
+    font-size: 20px;
+    bottom: 50px;
+    width: 20px;
+    height: 20px;
+    left: 588px;
+}
+
+.eight {
+    position: absolute;
+    font-size: 20px;
+    bottom: 110px;
+    width: 20px;
+    height: 20px;
+    left: 535px;
+}
+
+.nine {
+    position: absolute;
+    font-size: 20px;
+    top: 450px;
+    width: 20px;
+    height: 20px;
+    left: 520px;
+}
+
+.ten {
+    position: absolute;
+    font-size: 20px;
+    top: 380px;
+    width: 20px;
+    height: 20px;
+    left: 538px;
+}
+
+.eleven {
+    position: absolute;
+    font-size: 20px;
+    top: 320px;
+    width: 20px;
+    height: 20px;
+    left: 600px;
+}
+
+.twelve {
+    position: absolute;
+    font-size: 20px;
+    top: 300px;
+    width: 20px;
+    height: 20px;
+    right: 660px;
+}
+
+
+
+/* .Hour-Stick {
+	width: 1.8%;
+	height: 25%;
+	top: 25%;
+	left: 48.85%;
+	opacity: 0.8;
+}
+
+.Minute-Stick {
+	width: 1.6%;
+	height: 30%;
+	top: 19%;
+	left: 48.9%;
+	opacity: 0.8;
+}
+
+.stick {
+	width: 1%;
+	height: 40%;
+	top: 9%;
+	left: 49.25%;
+	opacity: 0.8;
+} */

@@ -147,21 +147,31 @@
 let start = document.querySelector('.start')
 let end = document.querySelector('.end')
 let reset = document.querySelector('.reset')
+let FirstStick = document.querySelector('.stick')
+let MinuteStick = document.querySelector('.Minute-Stick')
+let HourStick = document.querySelector('.Hour-Stick')
 // let end = document.querySelector('.end')
 let second = 0
 let minute = 0
 let hour = 0
+let deg =second*6
 // let day=0;
 let timerId;
 start.addEventListener('click',()=>{
    timerId=setInterval(() => {
      second++
-     if (second >= 60) {
+FirstStick.style.transform = `rotate(${second*6}deg)`
+
+     if (second >= 1) {
        minute++
+MinuteStick.style.transform = `rotate(${minute*6}deg)`
+
        second = 0
      }
-     if (minute >= 60) {
+     if (minute >= 2) {
        hour++
+HourStick.style.transform = `rotate(${hour*30}deg)`
+
        minute = 0
      }
      // if(hour>=24){
@@ -216,5 +226,17 @@ clearInterval(timerId)
 
 })
 
+ 
+// setInterval(() => {
+//   d = new Date(); //object of date()
+//   hr = d.getHours();
+//   min = d.getMinutes();
+//   sec = d.getSeconds();
+//   hr_rotation = 30 * hr + min / 2; //converting current time
+//   min_rotation = 6 * min;
+//   sec_rotation = 6 * sec;
 
-
+//   hour.style.transform = `rotate(${hr_rotation}deg)`;
+//   minute.style.transform = `rotate(${min_rotation}deg)`;
+//   second.style.transform = `rotate(${sec_rotation}deg)`;
+// }, 1000);
