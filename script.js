@@ -202,10 +202,19 @@ reset.addEventListener('click',()=>{
     second = 0
     minute = 0
     hour = 0
-    timerId.refresh();
-    timerId.setInterval(() => {
-        second = 0
-    minute = 0
-    hour = 0
-    }, 2000);
+    // timerId.refresh();
+    // timerId.clearInterval(() => {
+    //     second = 0
+    // minute = 0
+    // hour = 0
+    // }, 2000);
+    // clearInterval(reset)
+    seconds.innerText = `00`
+    minutes.innerText = `00`
+    hours.innerText = `00`
+clearInterval(timerId)
+
 })
+
+
+
