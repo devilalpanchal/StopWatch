@@ -8,7 +8,7 @@ let HourStick = document.querySelector('.Hour-Stick')
 let second = 0
 let minute = 0
 let hour = 0
-let deg =second*6
+// let deg =second*6
 let timerId;
 start.addEventListener('click',()=>{
    timerId=setInterval(() => {
